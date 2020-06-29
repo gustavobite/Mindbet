@@ -1,0 +1,39 @@
+<resources>
+    <dimen name="margin_xxsmall">2dp</dimen>
+    <dimen name="margin_xsmall">4dp</dimen>
+    <dimen name="margin_hsmall">6dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="margin_hmedium">20dp</dimen>
+    <dimen name="margin_medium">24dp</dimen>
+    <dimen name="margin_medium_2">29dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_large_3">40dp</dimen>
+    <dimen name="margin_xlarge">48dp</dimen>
+    <dimen name="margin_xxlarge">64dp</dimen>
+    <dimen name="margin_xxxlarge">80dp</dimen>
+    <dimen name="margin_xxxxlarge">110dp</dimen>
+    <dimen name="avatar_size">80dp</dimen>
+    <dimen name="margin_large_2">42dp</dimen>
+
+    <dimen name="password_line_height">0.5sp</dimen>
+    <dimen name="password_item_margin">4sp</dimen>
+    <dimen name="password_item_width">78dp</dimen>
+    <dimen name="password_item_height">48dp</dimen>
+    <dimen name="password_image_margin">20dp</dimen>
+
+
+    <dimen name="pdf_8dp">16px</dimen>
+    <dimen name="pdf_16dp">28px</dimen>
+    <dimen name="pdf_24dp">44px</dimen>
+
+
+    <dimen name="pdf_24sp_font">40px</dimen>
+    <dimen name="pdf_20sp_font">32px</dimen>
+    <dimen name="pdf_40sp_font">60px</dimen>
+    <dimen name="pdf_16sp_font">24px</dimen>
+
+    <dimen name="loading_size">56dp</dimen>
+
+    <dimen name="password_visible_item_size">58dp</dimen>
+</resources>

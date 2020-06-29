@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Text Style. -->
+    <style name="TextStyle">
+        <item name="fontFamily">@font/proximanova_regular</item>
+        <item name="android:textColor">?textColor</item>
+    </style>
+
+    <style name="TextStyle.BigHeadline">
+        <item name="fontFamily">@font/proximanova_regular</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="TextStyle.BigHeadline.Bold">
+        <item name="fontFamily">@font/proximanova_bold</item>
+    </style>
+
+    <style name="TextStyle.BigHeadline.Semibold">
+        <item name="fontFamily">@font/proximanova_semibold</item>
+    </style>
+
+    <style name="TextStyle.BigHeadline.Light">
+        <item name="fontFamily">@font/proximanova_light</item>
+    </style>
+
+    <style name="TextStyle.Headline">
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="TextStyle.Headline.Bold">
+        <item name="fontFamily">@font/proximanova_bold </item>
+    </style>
+
+    <style name="TextStyle.Headline.Semibold">
+        <item name="fontFamily">@font/proximanova_semibold</item>
+    </style>
+
+    <style name="TextStyle.Headline.Light">
+        <item name="fontFamily">@font/proximanova_light</item>
+    </style>
+
+    <style name="TextStyle.BiggerTitle">
+        <item name="fontFamily">@font/proximanova_regular</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="TextStyle.BiggerTitle.Bold">
+        <item name="fontFamily">@font/proximanova_bold </item>
+    </style>
+
+    <style name="TextStyle.BiggerTitle.Semibold">
+        <item name="fontFamily">@font/proximanova_semibold</item>
+    </style>
+
+    <style name="TextStyle.BiggerTitle.Light">
+        <item name="fontFamily">@font/proximanova_light</item>
+    </style>
+
+    <style name="TextStyle.Title">
+        <item name="fontFamily">@font/proximanova_regular</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="TextStyle.Title.Bold">
+        <item name="fontFamily">@font/proximanova_bold</item>
+    </style>
+
+    <style name="TextStyle.Title.Semibold">
+        <item name="fontFamily">@font/proximanova_semibold</item>
+    </style>
+
+    <style name="TextStyle.Title.Light">
+        <item name="fontFamily">@font/proximanova_light</item>
+    </style>
+
+    <style name="TextStyle.SubTitle">
+        <item name="fontFamily">@font/proximanova_regular</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextStyle.SubTitle.Bold">
+        <item name="fontFamily">@font/proximanova_bold</item>
+    </style>
+
+    <style name="TextStyle.SubTitle.Semibold">
+        <item name="fontFamily">@font/proximanova_semibold</item>
+    </style>
+
+    <style name="TextStyle.SubTitle.Light">
+        <item name="fontFamily">@font/proximanova_light</item>
+    </style>
+
+    <style name="TextStyle.BiggerBody">  <!--TextStyle.Body.Medium-->
+        <item name="fontFamily">@font/proximanova_regular</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextStyle.BiggerBody.Bold">
+        <item name="fontFamily">@font/proximanova_bold</item>
+    </style>
+
+    <style name="TextStyle.BiggerBody.Semibold">
+        <item name="fontFamily">@font/proximanova_semibold</item>
+    </style>
+
+    <style name="TextStyle.BiggerBody.Light">
+        <item name="fontFamily">@font/proximanova_light</item>
+    </style>
+
+    <style name="TextStyle.Body">
+        <item name="fontFamily">@font/proximanova_regular</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextStyle.Body.Bold">
+        <item name="fontFamily">@font/proximanova_bold</item>
+    </style>
+
+    <style name="TextStyle.Body.Semibold">
+        <item name="fontFamily">@font/proximanova_semibold</item>
+    </style>
+
+    <style name="TextStyle.Body.Light">
+        <item name="fontFamily">@font/proximanova_light</item>
+    </style>
+
+    <style name="TextStyle.Error">
+        <item name="android:textColor">@color/colorError</item>
+        <item name="fontFamily">@font/proximanova_light</item>
+    </style>
+
+    <style name="TextStyle.BodySmall">
+        <item name="fontFamily">@font/proximanova_regular</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    
+    <style name="CustomProgressBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:animateLayoutChanges">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="CustomProgressBar.Overlay" parent="CustomProgressBar">
+        <item name="android:background">@color/blackBackgroundProgress</item>
+        <item name="whiteProgress">true</item>
+        <item name="android:fitsSystemWindows">false</item>
+        <item name="isOverlay">true</item>
+    </style>
+
+    <style name="roundedImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+
+    <style name="CustomiseDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="MaterialDialogSheet" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowAnimationStyle">@style/MaterialDialogSheetAnimation</item>
+    </style>
+
+    <style name="MaterialDialogSheetAnimation">
+        <item name="android:windowEnterAnimation">@anim/popup_show</item>
+        <item name="android:windowExitAnimation">@anim/popup_hide</item>
+    </style>
+</resources>

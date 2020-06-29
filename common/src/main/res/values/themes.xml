@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">?gradientStart</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item><!--23+-->
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+
+
+        <!-- TEXT STYLES -->
+        <item name="textColor">@color/textColor</item>
+        <item name="textColorLight">@color/textColorLight</item>
+
+        <!-- GRADIENTS -->
+        <item name="gradientStart">@color/gradientStart</item>
+        <item name="gradientEnd">@color/gradientEnd</item>
+
+        <!-- BUTTON STYLES -->
+        <item name="primaryButtonColor">@color/colorPrimary</item>
+        <item name="primaryButtonRippleColor">@color/colorPrimaryDark</item>
+        <item name="primaryButtonTextColor">@color/inverseTextColor</item>
+
+        <item name="secondaryButtonColor">@color/colorSecondary</item>
+        <item name="secondaryButtonRippleColor">@color/colorSecondaryDark</item>
+        <item name="secondaryButtonTextColor">@color/colorPrimary</item>
+
+        <!-- EDIT TEXT STYLES-->
+        <item name="editTextBackgroundColor">@color/editTextBackgroundColor</item>
+        <item name="editTextTextColor">@color/textColor</item>
+        <item name="editTextHintColor">@color/editTextHintColor</item>
+        <item name="colorControlNormal">@color/editTextHintColor</item>
+        <item name="colorControlActivated">@color/editTextHintColor</item>
+
+        <!-- LOADING-->
+        <item name="loadingAnimationDark">false</item>
+    </style>
+    <style name="AppTheme.Dark" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <item name="android:statusBarColor">?gradientStart</item>
+        <item name="android:windowBackground">@color/colorBlack</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:navigationBarColor">@color/inverseNavigationBarColor</item>
+
+        <!-- TEXT STYLES -->
+        <item name="textColor">@color/inverseTextColor</item>
+        <item name="textColorLight">@color/inverseTextColorLight</item>
+
+
+        <!-- BUTTON STYLES -->
+        <item name="primaryButtonColor">@color/colorPrimary</item>
+        <item name="primaryButtonRippleColor">@color/colorPrimaryDark</item>
+        <item name="primaryButtonTextColor">@color/inverseTextColor</item>
+
+        <item name="secondaryButtonColor">@color/secondaryButton</item>
+        <item name="secondaryButtonRippleColor">@color/secondaryButtonRipple</item>
+        <item name="secondaryButtonTextColor">@color/colorPrimary</item>
+
+        <!-- EDIT TEXT STYLES-->
+        <item name="editTextBackgroundColor">@color/inverseEditTextBackgroundColor</item>
+        <item name="editTextTextColor">@color/textColor</item>
+        <item name="editTextHintColor">@color/editTextHintColor</item>
+
+        <!-- LOADING-->
+        <item name="loadingAnimationDark">true</item>
+    </style>
+
+    <style name="AppTheme.Translucent">
+        <item name="android:background">#00000000</item> <!-- Or any transparency or color you need -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+</resources>

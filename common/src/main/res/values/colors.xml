@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00A857</color>
+    <color name="colorPrimaryDark">#00924C</color>
+    <color name="colorDark">#00924C</color>
+    <color name="colorPrimaryDarkTranslucent">#AA00924C</color>
+
+    <color name="colorSecondary">#DBE2E9</color>
+    <color name="colorSecondaryDark">#C5CBD1</color>
+
+    <color name="colorGrayDark">#757575</color>
+    <color name="colorBlack">#1D1D1D</color>
+    <color name="colorBorderGrey">#3F3F3F</color>
+
+    <color name="colorAccent">#26D07C</color>
+    <color name="colorAccentSecondary">#E57700</color>
+
+    <color name="backgroundDark">#000000</color>
+    <color name="backgroundLight">#FFFFFF</color>
+
+    <color name="colorError">#FF0000</color>
+    <color name="colorErrorLight">#FF2845</color>
+    <color name="colorOrangeError">#FC6300</color>
+    <color name="errorColor">#FF2845</color>
+
+    <color name="translucentDark">#5B000000</color> <!--SMS TOKEN -->
+
+    <color name="textColor">#000000</color>
+    <color name="textColorLight">#891A1B1A</color>
+
+    <color name="gradientStart">@color/backgroundLight</color>
+    <color name="gradientEnd">@color/backgroundLight</color>
+
+    <color name="secondaryButton">#FFFFFF</color>
+    <color name="secondaryButtonRipple">@color/colorSecondary</color>
+
+    <color name="inverseNavigationBarColor">@color/backgroundDark</color>
+
+    <color name="inverseTextColor">#DDFFFFFF</color>
+    <color name="inverseTextColorLight">#DDFFFFFF</color>
+
+    <color name="inverseGradientStart">@color/backgroundDark</color>
+    <color name="inverseGradientEnd">@color/colorPrimary</color>
+    <color name="strokeAvatarColor">#00E074</color>
+
+    <color name="translucentLight">#45FFFFFF</color>
+
+    <color name="editTextBackgroundColor">@color/translucentLight</color>
+    <color name="inverseEditTextBackgroundColor">@color/translucentLight</color>
+    <color name="editTextHintColor">#B9B9B9</color>
+    <color name="separator_gradient">#DDD</color>
+
+    <color name="separator">#F5F5F8</color>
+    <color name="separator_alphabet">#ECECEC</color>
+    <color name="greytone02">#D6D6D6</color>
+    <color name="greytone03">#757575</color>
+
+    <color name="grey_bottom_background">#EFEFEF</color>
+
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="bo_textColor">#4a4b4a</color>
+    <color name="bo_success_color">#75ae50</color>
+    <color name="bo_error_color">#dc213a</color>
+    <color name="bo_normal_color">#757575</color>
+
+    <color name="gradientTextStart">#ffffff</color>
+    <color name="gradientTextEnd">#26D8D8D8</color>
+
+    <color name="navigationBarColor">#000000</color>
+    <color name="navigationBarColorDark">#037d54</color>
+
+    <color name="white_50">#80FFFFFF</color>
+    <color name="colorPrimary_50">#8000A857</color>
+    <color name="green_50">#803EB952</color>
+    <color name="branchAccount">#99FFFFFF</color>
+
+    <color name="whiteBackgroundProgress">#ccffffff</color>
+    <color name="blackBackgroundProgress">#991A1B1A</color>
+
+    <color name="colorGradientStart">#000</color>
+    <color name="colorGradientCenter">#143423</color>
+    <color name="colorGradientEnd">#00924C</color>
+</resources>

@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">common</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="_0">0</string>
+    <string name="_or">ou</string>
+    <string name="back">Voltar</string>
+    <string name="ok">OK</string>
+    <string name="error">Erro</string>
+    <string name="drag_down_to_close">Puxe para baixo para fechar</string>
+    <string name="cpf">CPF</string>
+    <string name="forgotit">Esqueci</string>
+    <string name="ib_link_host">meu.original.com.br</string>
+    <string name="forgot_password">Esqueceu a senha?</string>
+    <string name="to_change_password">Para recuperar sua senha,\nacesse seu internet banking no\ncomputador pelo link:</string>
+    <string name="cnpj">CNPJ</string>
+    <string name="currency">R$</string>
+    <string name="name">Nome</string>
+    <string name="availability_balance">Sujeito à disponibilidade de saldo</string>
+    <string name="new_payment">Novo Pagamento</string>
+    <!--  centered ********  -->
+    <string name="hub_balance_hidden_balance">\u2217\u2217\u2217\u2217\u2217\u2217</string>
+    <string name="pay">Pagar</string>
+    <string name="split">Parcelar</string>
+    <string name="editSchedule">Editar agendamento</string>
+    <string name="cancel">Cancel</string>
+    <string name="credit">Crédito</string>
+    <string name="debit">Débito</string>
+    <string name="schedule">Agendar</string>
+    <string name="home_hub_transfer">Transferir</string>
+    <string name="home_hub_pay">Pagar</string>
+    <string name="home_hub_statement">Extrato</string>
+    <string name="payment_hub_auto_debit">Débito Automático</string>
+    <string name="payment_hub_dda">DDA</string>
+
+    <string name="repeat">Repetir</string>
+    <string name="error_repeat">Algou deu errado.\nTente repetir a operação</string>
+    <string name="error_try_again_later">Algo deu errado.\nTente novamente mais tarde.</string>
+    <string name="from">De</string>
+    <string name="branch">Agência</string>
+    <string name="account">Conta Corrente</string>
+    <string name="doc_type">CPF/CNPJ</string>
+    <string name="destination">Para</string>
+    <string name="bank">Banco</string>
+    <string name="value">Valor</string>
+    <string name="payment_made">Pagamento realizado em espécie</string>
+    <string name="expire_date">Data de vencimento</string>
+    <string name="payment_date">Data do pagamento</string>
+
+    <string name="pdf_header_message_scheduling_transfer">Comprovante\nde agendamento\nde transferência</string>
+    <string name="pdf_header_message_transfer">Comprovante de\ntransfêrencia</string>
+    <string name="pdf_header_message_payment">Comprovante de\npagamento de boleto</string>
+    <string name="pdf_header_message_scheduling_payment">Comprovante de\nagendamento de boleto</string>
+    <string name="pdf_header_message_payment_tribute">Comprovante de\n pagamento de tributo</string>
+    <string name="confirmation_code">Código de confirmação</string>
+    <string name="request_channel">Canal de solicitação</string>
+    <string name="date_hour_request">Data e hora da solicitação</string>
+    <string name="payment_data">Dados do pagamento</string>
+    <string name="payment_company_name">Razão Social</string>
+    <string name="final_payer_data">Dados do pagador final</string>
+    <string name="payment_company_data">Dados do sacador/avalista</string>
+    <string name="barcode">Código de barras</string>
+    <string name="instituction">Institução Emissora</string>
+    <string name="nominal_value">Valor Nominal</string>
+    <string name="charges">Encargos</string>
+    <string name="rebates">Abatimentos</string>
+    <string name="discounts">Discounts</string>
+    <string name="cpf_password_error">CPF ou senha incorretos</string>
+    <string name="chat">Chat</string>
+    <string name="menu">menu</string>
+    <string name="description">Descrição</string>
+    <string name="favorita">Favorita</string>
+
+    <string name="tem_certeza_de_quer_trocar_de_conta">Tem certeza de quer\ntrocar de conta?</string>
+    <string name="cancel_">Cancelar</string>
+    <string name="change">Trocar</string>
+
+    <string name="account_type">Conta Corrente</string>
+    <string name="account_description">Ag. %s  c/c. %s</string>
+
+    <string name="first_access_title">Olá de novo!</string>
+    <string name="first_access_message">Para esse primeiro acesso, você\nterá que acessar a sua conta\natravés desse link em seu\ncomputador e clicar em\n“Primeiro acesso?”.</string>
+    <string name="temp_password_title">Acesso com senha\nprovisória</string>
+    <string name="temp_password_message">Você está utilizando uma\nsenha provisória e deve criar uma\nnova senha definitiva. Para isso,\nacesse  sua conta através desse\nlink em seu computador.</string>
+
+    <string name="survey_url">https://survey.binds.co/link/0EM8jB5mkLY9q34dZ16NPoN5cja1PmnE0G3G17rvPxVwoJpQ</string>
+
+</resources>
