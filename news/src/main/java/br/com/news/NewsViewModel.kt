@@ -1,4 +1,4 @@
-package br.com.mindbet.core.news
+package br.com.news
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -6,13 +6,13 @@ import androidx.lifecycle.ViewModel
 import br.com.mindbet.common.base.Resource
 import br.com.mindbet.common.extension.toSingleEvent
 import br.com.mindbet.common.helper.SingleLiveEvent
-import br.com.mindbet.core.news.interactor.GetNews
-import br.com.mindbet.core.news.model.News
+import br.com.news.interactor.GetNews
+import br.com.news.model.News
 
-class NewsViewModel(private val getNews: GetNews) : ViewModel() {
+class NewsViewModel(private val getNews: br.com.news.interactor.GetNews) : ViewModel() {
 
     private val _getNewsResponse =
-        MutableLiveData<Resource<List<News>>>()
+        MutableLiveData<Resource<List<br.com.news.model.News>>>()
 
     val getNewsResponse = _getNewsResponse.toSingleEvent()
 

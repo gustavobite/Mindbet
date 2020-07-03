@@ -1,10 +1,10 @@
-package br.com.mindbet.core.news.adapter
+package br.com.news.adapter
 
 import android.view.View
 import android.widget.TextView
 import br.com.mindbet.common.component.recycler_view.BaseRecyclerViewAdapter
-import br.com.mindbet.core.R
-import br.com.mindbet.core.news.model.News
+import br.com.news.R
+import br.com.news.model.News
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.google.android.material.imageview.ShapeableImageView

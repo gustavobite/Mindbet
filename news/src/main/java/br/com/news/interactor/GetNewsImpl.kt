@@ -1,11 +1,12 @@
-package br.com.mindbet.core.news.interactor
+package br.com.news.interactor
 
 import br.com.mindbet.common.base.Resource
-import br.com.mindbet.core.CoreService
-import br.com.mindbet.core.news.model.News
+import br.com.news.NewsService
+import br.com.news.model.News
 import java.lang.Exception
 
-class GetNewsImpl(private val service: CoreService):GetNews()  {
+class GetNewsImpl(private val service: NewsService):
+    GetNews()  {
     override suspend fun execute(params: Unit): Resource<List<News>> {
         return try{
             //TODO: tratamentos para lista vazia, usuario logado etc

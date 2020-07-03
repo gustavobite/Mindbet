@@ -5,6 +5,7 @@ import br.com.mindbet.common.dependency.GetUUIDModule
 import br.com.mindbet.common.dependency.NetworkModule
 import br.com.mindbet.common.dependency.SteganographyModule
 import br.com.mindbet.core.dependencies.CoreDependencies
+import br.com.news.dependencies.NewsDependencies
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -28,7 +29,8 @@ class MindbetApp : Application() {
                 NetworkModule.dependencyModule,
                 SteganographyModule.dependencyModule,
                 GetUUIDModule.dependencyModule,
-                CoreDependencies.dependencies
+                CoreDependencies.dependencies,
+                NewsDependencies.dependencies
             ))
         }
 

@@ -1,4 +1,4 @@
-package br.com.mindbet.core.news.model
+package br.com.news.model
 
 class News(
     val title:String? = "",

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/news"
-        android:name="br.com.mindbet.core.news.NewsFragment"
+        android:name="br.com.news.NewsFragment"
         android:label="PopularSeriesFragment"
         tools:layout="@layout/fragment_news">
 

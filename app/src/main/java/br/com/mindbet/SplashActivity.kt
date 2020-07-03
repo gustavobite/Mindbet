@@ -16,7 +16,7 @@ class SplashActivity : BaseActivity(){
 
         launch {
             delay(3000)
-            startActivity(Intent(this@SplashActivity, CoreActivity::class.java))
+            startActivity(Intent(this@SplashActivity, MainActivity::class.java))
         }
     }
 }

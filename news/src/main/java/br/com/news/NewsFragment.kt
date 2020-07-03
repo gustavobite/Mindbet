@@ -1,4 +1,4 @@
-package br.com.mindbet.core.news
+package br.com.news
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,9 +11,7 @@ import br.com.mindbet.common.base.Resource
 import br.com.mindbet.common.extension.hide
 import br.com.mindbet.common.extension.show
 import br.com.mindbet.common.extension.then
-import br.com.mindbet.core.R
-import br.com.mindbet.core.news.adapter.NewsAdapter
-import br.com.mindbet.core.news.model.News
+import br.com.news.adapter.NewsAdapter
 import kotlinx.android.synthetic.main.fragment_news.*
 import kotlinx.coroutines.launch
 import org.koin.android.ext.android.inject
@@ -65,7 +63,7 @@ class NewsFragment: BaseFragment() {
 
     }
 
-    private fun onItemClick(news:News){
+    private fun onItemClick(news: br.com.news.model.News){
         showToast(news.title!!)
     }
 }

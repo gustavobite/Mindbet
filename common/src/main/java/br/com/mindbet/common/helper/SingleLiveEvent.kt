@@ -48,7 +48,7 @@ import java.util.concurrent.atomic.AtomicBoolean
 
 class SingleLiveEvent<T>: MediatorLiveData<T>() {
 
-    private val observers = ArraySet<ObserverWrapper<in T>>()
+    private val observers = androidx.collection.ArraySet<ObserverWrapper<in T>>()
 
     @MainThread
     override fun observe(owner: LifecycleOwner, observer: Observer<in T>) {
