@@ -15,6 +15,7 @@ import br.com.mindbet.common.base.BaseFragment
 import br.com.news.NewsViewModel
 import br.com.news.R
 import br.com.news.databinding.FragmentNewsDetailsBinding
+import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.appbar.AppBarLayout.OnOffsetChangedListener
 import kotlinx.android.synthetic.main.fragment_news_details.*
 import org.koin.androidx.viewmodel.ext.android.sharedViewModel
@@ -45,6 +46,22 @@ class NewsDetailsFragment : BaseFragment() {
         viewModel.newsSelected.observe(viewLifecycleOwner, Observer {
             binding?.item = it
             binding?.executePendingBindings()
+        })
+
+
+        var isShow = true
+        var scrollRange = -1
+        app_bar.addOnOffsetChangedListener(AppBarLayout.OnOffsetChangedListener { barLayout, verticalOffset ->
+            if (scrollRange == -1){
+                scrollRange = barLayout?.totalScrollRange!!
+            }
+            if (scrollRange + verticalOffset == 0){
+                collapsinToolbar.title = viewModel.newsSelected.value?.subject
+                isShow = true
+            } else if (isShow){
+                collapsinToolbar.title = " " //careful there should a space between double quote otherwise it wont work
+                isShow = false
+            }
         })
     }
 }

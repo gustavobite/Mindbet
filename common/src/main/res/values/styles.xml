@@ -185,4 +185,13 @@
         <item name="android:windowEnterAnimation">@anim/popup_show</item>
         <item name="android:windowExitAnimation">@anim/popup_hide</item>
     </style>
+
+    <style name="MindbetButton" parent="TextAppearance.AppCompat.Button">
+        <item name="android:background">@drawable/background_button</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/proximanova_semibold</item>
+        <item name="android:padding">8dp</item>
+
+    </style>
 </resources>

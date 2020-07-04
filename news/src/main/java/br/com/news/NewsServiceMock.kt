@@ -12,35 +12,40 @@ class NewsServiceMock: NewsService{
                 tag = "#RealMadrid",
                 image = "https://pbs.twimg.com/media/CdCsSbAXEAA2KH_.jpg",
                 id = (1..99).random().toString(),
-                description = generateDescription()
+                description = generateDescription(),
+                subject = "Real Madrid"
             ),
             News(
                 title = "Zidane avisa: 'Estais avisado!'",
                 tag = "#RealMadrid",
                 image = "https://pbs.twimg.com/media/CdCsSbAXEAA2KH_.jpg",
                 id = (1..99).random().toString(),
-                description = generateDescription()
+                description = generateDescription(),
+                subject = "Real Madrid"
             ),
             News(
                 title = "Zidane avisa: 'Estais avisado!'",
                 tag = "#RealMadrid",
                 image = "https://pbs.twimg.com/media/CdCsSbAXEAA2KH_.jpg",
                 id = (1..99).random().toString(),
-                description = generateDescription()
+                description = generateDescription(),
+                subject = "Real Madrid"
             ),
             News(
                 title = "Zidane avisa: 'Estais avisado!'",
                 tag = "#RealMadrid",
                 image = "https://pbs.twimg.com/media/CdCsSbAXEAA2KH_.jpg",
                 id = (1..99).random().toString(),
-                description = generateDescription()
+                description = generateDescription(),
+                subject = "Real Madrid"
             ),
             News(
                 title = "Zidane avisa: 'Estais avisado!'",
                 tag = "#RealMadrid",
                 image = "https://pbs.twimg.com/media/CdCsSbAXEAA2KH_.jpg",
                 id = (1..99).random().toString(),
-                description = generateDescription()
+                description = generateDescription(),
+                subject = "Real Madrid"
             )
         )
     }

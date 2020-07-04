@@ -4,39 +4,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        app:lottie_repeatMode="restart"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/development"
         app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
-
-        <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/lottie"
-            app:lottie_repeatMode="restart"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:lottie_autoPlay="true"
-            app:lottie_loop="true"
-            app:lottie_rawRes="@raw/development"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Under Development"
-            style="@style/TextStyle.Title.Bold"
-            android:gravity="center"
-            app:layout_constraintTop_toBottomOf="@+id/lottie"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            app:layout_constraintEnd_toEndOf="parent"/>
 
 
 

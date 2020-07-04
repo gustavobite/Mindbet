@@ -26,6 +26,8 @@
             android:id="@+id/collapsinToolbar"
             android:background="@null"
             app:contentScrim="@color/white"
+            app:title="@{ item.subject }"
+            app:expandedTitleTextAppearance="@android:color/transparent"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
             <ImageView
                 android:id="@+id/newsImage"
@@ -35,7 +37,6 @@
                 android:transitionName="@{@string/newsImageTransiction(String.valueOf(item.id))}"
                 app:loadImage="@{ item.image }"
                 app:layout_collapseParallaxMultiplier=".7"
-                app:expandedTitleTextAppearance="@android:color/transparent"
                 app:layout_collapseMode="parallax"/>
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
