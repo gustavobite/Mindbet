@@ -5,7 +5,7 @@ apply plugin: 'kotlin-kapt'
 apply plugin: "androidx.navigation.safeargs.kotlin"
 apply from: "$rootDir/app/base-build.gradle"
 
+
 dependencies {
-    api modulesDependencies.navigation
     implementation modulesDependencies.common
 }

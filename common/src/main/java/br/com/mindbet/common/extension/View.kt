@@ -19,12 +19,16 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.widget.NestedScrollView
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 import androidx.core.view.ViewCompat
+import androidx.databinding.BindingAdapter
 import br.com.mindbet.common.R
+import com.bumptech.glide.Glide
+import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.google.android.material.appbar.AppBarLayout
 
 fun View.changeVisibility(){
@@ -271,4 +275,18 @@ fun NestedScrollView.scrollToBottom() {
     val bottom = lastChild.bottom + paddingBottom
     val delta = bottom - (scrollY+ height)
     smoothScrollBy(0, delta)
+}
+
+fun ImageView.showImage(url:String){
+    Glide.with(this.context)
+        .asBitmap()
+        .load(url)
+        .dontAnimate()
+        .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
+        .into(this)
+}
+
+@BindingAdapter("bind:loadImage")
+fun loadImage(view : ImageView, url : String?){
+    view.showImage(url ?: "")
 }

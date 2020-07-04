@@ -114,7 +114,8 @@ ext {
             common       : project(":common"),
             core         : project(":core"),
             login         : project(":login"),
-            news         : project(":news")
+            news         : project(":news"),
+            navigation         : project(":navigation")
     ]
 
     testDependencies = [

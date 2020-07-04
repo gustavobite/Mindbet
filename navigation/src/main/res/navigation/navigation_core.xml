@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/news"
+    android:id="@+id/navigation_core">
+
+    <fragment
+        android:id="@+id/news"
+        android:name="br.com.news.NewsFragment"
+        android:label="NewsFragment">
+
+        <action android:id="@+id/action_news_to_details"
+            app:destination="@+id/newsDetails" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/newsDetails"
+        android:name="br.com.news.details.NewsDetailsFragment"
+        android:label="NewsDetailsFragment"/>
+
+    <fragment
+        android:id="@+id/simulate"
+        android:name="br.com.mindbet.core.simulation.SimulationFragment"
+        android:label="SimulateFragment"/>
+</navigation>

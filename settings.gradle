@@ -1,3 +1,2 @@
-include ':news'
-include ':app', ':common', ':core', ':login'
+include ':app', ':common', ':core', ':login',":navigation",':news'
 rootProject.name = "Mindbet"

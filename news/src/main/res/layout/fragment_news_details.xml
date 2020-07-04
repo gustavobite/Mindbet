@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="item"
+            type="br.com.news.model.News" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:background="@null"
+        android:layout_height="250dp">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/collapsinToolbar"
+            android:background="@null"
+            app:contentScrim="@color/white"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <ImageView
+                android:id="@+id/newsImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:transitionName="@{@string/newsImageTransiction(String.valueOf(item.id))}"
+                app:loadImage="@{ item.image }"
+                app:layout_collapseParallaxMultiplier=".7"
+                app:expandedTitleTextAppearance="@android:color/transparent"
+                app:layout_collapseMode="parallax"/>
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"/>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/newsTitle"
+                style="@style/TextStyle.Title.Semibold"
+                android:layout_margin="@dimen/margin"
+                android:text="@{ item.title }"
+                android:transitionName="@{@string/newsTitleTransiction(String.valueOf(item.id))}"
+                tools:text="Zidane avisa: 'Estais avisado!'"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/descriptionNews"
+                android:layout_below="@id/newsTitle"
+                style="@style/TextStyle.Body"
+                android:text="@{ item.description }"
+                android:layout_margin="@dimen/margin"
+                tools:text="Mas afinal: você já se perguntou qual era o aviso de Zidane que o Marca avisava ter avisado? Se você já clicou no link ali publicado, certamente percebeu que ele não abre uma página do site do jornal. Bom, chegou o dia de saciar a sua curiosidade. A começar por uma pista na própria postagem: a foto permite concluir que Zidane dá uma entrevista coletiva em um evento da Liga dos Campeões da Europa. O símbolo da competição aparece à frente do técnico e ao fundo. Naquele dia, o Real Madrid, do qual o francês era técnico, venceu a Roma por 2 a 0, em jogo no Santiago Bernabéu pelas oitavas de final da Liga dos Campeões. Era a partida de volta do confronto - na ida, na Itália, os comand... - Veja mais em https://www.uol.com.br/esporte/futebol/ultimas-noticias/2019/07/27/afinal-o-que-zidane-avisou-uol-explica-viral-do-twitter-para-voce.htm?cmpid=copiaecola"
+                />
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

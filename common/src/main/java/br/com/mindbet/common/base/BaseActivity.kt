@@ -145,8 +145,25 @@ abstract class BaseActivity : AppCompatActivity(), CoroutineScope by MainScope()
     }
 
 
+    fun setupToolbar(toolbar: Toolbar,
+                     isDarkMenu:Boolean = true,
+                     navigationIcon: NavigationIcon? = null,
+                     navigationIconAction: (() -> Unit)? = null
+    ){
+
+        navigationIcon?.let {
+            toolbar.setNavigationIcon( if(isDarkMenu) navigationIcon.drawableDark else navigationIcon.drawable)
+            toolbar.setNavigationOnClickListener {
+                navigationIconAction?.invoke() ?: onBackPressed()
+            }
+        }
+    }
 
 
+    enum class NavigationIcon(@DrawableRes val drawableDark: Int, @DrawableRes val drawable: Int) {
+        XIcon(R.drawable.ic_close_black, R.drawable.ic_close_white),
+        ArrowIcon(R.drawable.ic_arrow_back_black_24dp, R.drawable.ic_arrow_back_white_24dp)
+    }
 
 
 }

@@ -71,4 +71,9 @@ abstract class BaseFragment : androidx.fragment.app.Fragment(), CoroutineScope b
     protected fun showToast(message: String, time: Int = Toast.LENGTH_SHORT){
         Toast.makeText(requireContext(), message, time).show()
     }
+
+    fun setupToolbar(toolbar: Toolbar,
+                     isDarkMenu:Boolean = true,
+                     navigationIcon: BaseActivity.NavigationIcon? = null,
+                     navigationIconAction: (() -> Unit)? = null) = (activity as? BaseActivity)?.setupToolbar(toolbar,isDarkMenu,navigationIcon,navigationIconAction)
 }

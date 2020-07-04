@@ -8,15 +8,15 @@
         <item
             android:id="@+id/news"
             android:checked="true"
-            android:icon="@drawable/ic_expand_less_24dp"
-            android:title="News" />
+            android:icon="@drawable/ic_newspaper"
+            android:title="Notícias" />
         <item
             android:id="@+id/simulate"
-            android:icon="@drawable/ic_expand_more_24dp"
+            android:icon="@drawable/ic_computer"
             android:title="Simular" />
         <item
             android:id="@+id/about"
-            android:icon="@drawable/ic_expand_more_24dp"
+            android:icon="@drawable/ic_info"
             android:title="Sobre" />
     </group>
 </menu>

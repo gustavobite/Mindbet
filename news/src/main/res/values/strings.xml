@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">News</string>
     <string name="news_title">Trending</string>
+    <string name="newsImageTransiction">image %s</string>
+    <string name="newsTitleTransiction">title %s</string>
 
 </resources>

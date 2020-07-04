@@ -43,7 +43,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
 
-        <item name="android:statusBarColor">?gradientStart</item>
+        <item name="android:statusBarColor">@color/colorBlack</item>
         <item name="android:windowBackground">@color/colorBlack</item>
         <item name="android:windowActivityTransitions">true</item>
         <item name="android:windowContentTransitions">true</item>

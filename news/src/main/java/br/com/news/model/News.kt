@@ -4,5 +4,6 @@ class News(
     val title:String? = "",
     val image: String? = "",
     val tag:String? = "",
-    val id:String? = ""
+    val id:String? = "",
+    val description:String? = ""
 )
