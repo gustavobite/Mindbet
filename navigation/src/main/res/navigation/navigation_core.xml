@@ -23,4 +23,9 @@
         android:id="@+id/simulate"
         android:name="br.com.mindbet.core.simulation.SimulationFragment"
         android:label="SimulateFragment"/>
+
+    <fragment
+        android:id="@+id/about"
+        android:name="br.com.about.AboutFragment"
+        android:label="SimulateFragment"/>
 </navigation>
