@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="viewModel"
+            type="br.com.mindset.login.LoginViewModel" />
+    </data>
+
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -38,6 +45,7 @@
                 android:layout_height="match_parent"
                 android:background="@null"
                 android:hint="Digite seu email"
+                android:text="@={ viewModel.user.email }"
                 android:inputType="textEmailAddress"
                 android:paddingStart="@dimen/margin_small"
                 android:paddingEnd="@dimen/margin_small"
@@ -64,6 +72,7 @@
                 android:layout_height="match_parent"
                 android:background="@null"
                 android:hint="******"
+                android:text="@={ viewModel.user.password }"
                 android:inputType="textPassword"
                 android:paddingStart="@dimen/margin_small"
                 android:paddingEnd="@dimen/margin_small"
@@ -109,3 +118,4 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
+</layout>

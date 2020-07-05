@@ -2,6 +2,7 @@ package br.com.mindbet.application
 
 import android.app.Application
 import br.com.about.dependencies.AboutDependencies
+import br.com.mindbet.common.dependency.CommonModule
 import br.com.mindbet.common.dependency.GetUUIDModule
 import br.com.mindbet.common.dependency.NetworkModule
 import br.com.mindbet.common.dependency.SteganographyModule
@@ -27,6 +28,7 @@ class MindbetApp : Application() {
             androidLogger(Level.DEBUG)
             androidContext(this@MindbetApp)
             modules(listOf(
+                CommonModule.dependencyModule,
                 NetworkModule.dependencyModule,
                 SteganographyModule.dependencyModule,
                 GetUUIDModule.dependencyModule,
