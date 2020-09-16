@@ -1,6 +1,8 @@
 package br.com.news.details
 
+import android.content.Intent
 import android.graphics.PorterDuff
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -56,12 +58,18 @@ class NewsDetailsFragment : BaseFragment() {
                 scrollRange = barLayout?.totalScrollRange!!
             }
             if (scrollRange + verticalOffset == 0){
-                collapsinToolbar.title = viewModel.newsSelected.value?.subject
+                collapsinToolbar.title = viewModel.newsSelected.value?.author
                 isShow = true
             } else if (isShow){
                 collapsinToolbar.title = " " //careful there should a space between double quote otherwise it wont work
                 isShow = false
             }
         })
+
+        btnMore.setOnClickListener {
+            val browserIntent =
+                Intent(Intent.ACTION_VIEW, Uri.parse(viewModel.newsSelected.value?.url))
+            startActivity(browserIntent)
+        }
     }
 }

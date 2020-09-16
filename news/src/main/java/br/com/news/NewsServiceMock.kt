@@ -1,53 +1,23 @@
 package br.com.news
 
 import br.com.news.model.News
+import br.com.news.model.NewsResponse
 import kotlinx.coroutines.delay
 
-class NewsServiceMock: NewsService{
-    override suspend fun getNews(): List<News> {
+class   NewsServiceMock: NewsService{
+    override suspend fun getNews(): NewsResponse {
         delay(2000)
-        return listOf(
+        return NewsResponse(listOf(
             News(
                 title = "Zidane avisa: 'Estais avisado!'",
-                tag = "#RealMadrid",
-                image = "https://pbs.twimg.com/media/CdCsSbAXEAA2KH_.jpg",
-                id = (1..99).random().toString(),
                 description = generateDescription(),
-                subject = "Real Madrid"
-            ),
-            News(
-                title = "Zidane avisa: 'Estais avisado!'",
-                tag = "#RealMadrid",
-                image = "https://pbs.twimg.com/media/CdCsSbAXEAA2KH_.jpg",
-                id = (1..99).random().toString(),
-                description = generateDescription(),
-                subject = "Real Madrid"
-            ),
-            News(
-                title = "Zidane avisa: 'Estais avisado!'",
-                tag = "#RealMadrid",
-                image = "https://pbs.twimg.com/media/CdCsSbAXEAA2KH_.jpg",
-                id = (1..99).random().toString(),
-                description = generateDescription(),
-                subject = "Real Madrid"
-            ),
-            News(
-                title = "Zidane avisa: 'Estais avisado!'",
-                tag = "#RealMadrid",
-                image = "https://pbs.twimg.com/media/CdCsSbAXEAA2KH_.jpg",
-                id = (1..99).random().toString(),
-                description = generateDescription(),
-                subject = "Real Madrid"
-            ),
-            News(
-                title = "Zidane avisa: 'Estais avisado!'",
-                tag = "#RealMadrid",
-                image = "https://pbs.twimg.com/media/CdCsSbAXEAA2KH_.jpg",
-                id = (1..99).random().toString(),
-                description = generateDescription(),
-                subject = "Real Madrid"
+                author = "Real Madrid",
+                content = "",
+                publishedAt = "",
+                url = "",
+                urlToImage = ""
             )
-        )
+        ), "200", 1)
     }
 
     private fun generateDescription():String = "Mussum Ipsum, cacilds vidis litro abertis. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Si num tem leite então bota uma pinga aí cumpadi! Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. In elementis mé pra quem é amistosis quis leo.\n" +

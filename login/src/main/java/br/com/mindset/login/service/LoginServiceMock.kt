@@ -6,7 +6,7 @@ import kotlinx.coroutines.delay
 import retrofit2.Response
 
 class LoginServiceMock : LoginService {
-    override suspend fun authenticate(): Response<User> {
+    override suspend fun authenticate(user: User): Response<User> {
         delay(3000)
         return Response.success(
             User(

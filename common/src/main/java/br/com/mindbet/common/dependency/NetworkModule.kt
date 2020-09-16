@@ -17,7 +17,7 @@ class NetworkModule {
             single {
                 provideOkHttpClient()
             }
-            single { provideRetrofit(get(), get()) }
+            single { provideRetrofit(get()) }
         }
 
         private fun provideOkHttpClient(): OkHttpClient {
@@ -34,10 +34,9 @@ class NetworkModule {
 
 
         private fun provideRetrofit(
-            environment: EnvironmentConfig,
             client: OkHttpClient
         ): Retrofit = Retrofit.Builder()
-            .baseUrl(environment.apiUrl)
+            .baseUrl("http://mindbetapi.azurewebsites.net/")
             .client(client)
             .addConverterFactory(GsonConverterFactory.create())
             .build()

@@ -1,5 +1,6 @@
 package br.com.news
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -21,7 +22,6 @@ import com.google.android.material.imageview.ShapeableImageView
 import kotlinx.android.synthetic.main.fragment_news.*
 import kotlinx.coroutines.launch
 import org.koin.androidx.viewmodel.ext.android.sharedViewModel
-import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
 class NewsFragment: NavigationFragment(), SwipeRefreshLayout.OnRefreshListener {
@@ -68,7 +68,6 @@ class NewsFragment: NavigationFragment(), SwipeRefreshLayout.OnRefreshListener {
             layoutManager = LinearLayoutManager(context)
             adapter = this@NewsFragment.adapter
         }
-
     }
 
     override fun onRefresh() {

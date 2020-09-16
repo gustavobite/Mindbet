@@ -48,10 +48,10 @@ class NewsAdapter(val listener: ((News,ShapeableImageView, TextView) -> Unit)? =
         fun bind(item: News) {
            item.apply {
                newsTitle.text = this.title
-               newsTag.text = this.tag
-                newsImage.showImage(item.image ?: "")
-                newsImage.transitionName = itemView.context.getString(R.string.newsImageTransiction,item.id)
-               newsTitle.transitionName = itemView.context.getString(R.string.newsTitleTransiction,item.id)
+               newsTag.text = this.author?.let {  "#${it.replace(" ","")}" } ?: "#Sports"
+                newsImage.showImage(item.urlToImage ?: "")
+                newsImage.transitionName = itemView.context.getString(R.string.newsImageTransiction,item.tag)
+               newsTitle.transitionName = itemView.context.getString(R.string.newsTitleTransiction,item.tag)
                rootView.setOnClickListener { listener?.invoke(item,newsImage, newsTitle) }
            }
         }
