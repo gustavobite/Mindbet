@@ -1,16 +1,23 @@
-package br.com.about.service
+package br.com.about.data.service
 
 import android.content.Context
 import br.com.about.R
-import br.com.about.model.AboutUsResponse
-import br.com.about.model.Member
+import br.com.about.data.model.AboutUsResponse
+import br.com.about.data.model.Member
 import kotlinx.coroutines.delay
 import retrofit2.Response
 
-class AboutServiceMock(private val context: Context) : AboutService {
+class AboutServiceMock(private val context: Context) :
+    AboutService {
 
     override suspend fun getAboutUs(): Response<AboutUsResponse> {
-        return Response.success(AboutUsResponse(context.resources.getString(R.string.about)))
+        return Response.success(
+            AboutUsResponse(
+                context.resources.getString(
+                    R.string.about
+                )
+            )
+        )
     }
 
     override suspend fun getMembers(): Response<List<Member>> {

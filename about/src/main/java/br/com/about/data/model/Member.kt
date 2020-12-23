@@ -1,4 +1,4 @@
-package br.com.about.model
+package br.com.about.data.model
 
 import br.com.mindbet.common.extension.createUUID
 

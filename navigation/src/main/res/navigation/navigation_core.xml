@@ -26,6 +26,6 @@
 
     <fragment
         android:id="@+id/about"
-        android:name="br.com.about.AboutFragment"
+        android:name="br.com.about.presentation.AboutFragment"
         android:label="SimulateFragment"/>
 </navigation>

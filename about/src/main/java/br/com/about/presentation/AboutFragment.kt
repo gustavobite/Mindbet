@@ -1,6 +1,5 @@
-package br.com.about
+package br.com.about.presentation
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,8 +8,8 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.transition.TransitionInflater
-import br.com.about.adapter.MembersAdapter
+import br.com.about.R
+import br.com.about.presentation.adapter.MembersAdapter
 import br.com.about.databinding.FragmentAboutBinding
 import br.com.mindbet.common.base.BaseFragment
 import br.com.mindbet.common.base.Resource

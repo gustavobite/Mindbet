@@ -1,11 +1,11 @@
-package br.com.about
+package br.com.about.presentation
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import br.com.about.domain.GetAbout
 import br.com.about.domain.GetMembers
-import br.com.about.model.AboutUsResponse
-import br.com.about.model.Member
+import br.com.about.data.model.AboutUsResponse
+import br.com.about.data.model.Member
 import br.com.mindbet.common.base.Resource
 import br.com.mindbet.common.extension.combineWith
 import br.com.mindbet.common.extension.toSingleEvent

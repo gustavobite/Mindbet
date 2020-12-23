@@ -1,9 +1,9 @@
-package br.com.about.adapter
+package br.com.about.presentation.adapter
 
 import android.view.View
 import android.widget.TextView
 import br.com.about.R
-import br.com.about.model.Member
+import br.com.about.data.model.Member
 import br.com.mindbet.common.component.recycler_view.BaseRecyclerViewAdapter
 import br.com.mindbet.common.extension.showImage
 import com.bumptech.glide.Glide
@@ -14,7 +14,10 @@ class MembersAdapter(listener: ((Member) -> Unit)? = null) :
     BaseRecyclerViewAdapter<Member, MembersAdapter.MembersHolder>(listener) {
     override fun getLayoutResource(viewType: Int): Int = R.layout.adapter_members
     override fun createViewHolder(view: View, viewType: Int): MembersHolder =
-        MembersHolder(view, onClick)
+        MembersHolder(
+            view,
+            onClick
+        )
 
     class MembersHolder(itemView: View, val listener: ((Member) -> Unit)? = null) :
         BaseViewHolder<Member>(itemView, listener) {

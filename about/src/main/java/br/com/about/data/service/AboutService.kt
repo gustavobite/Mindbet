@@ -1,7 +1,7 @@
-package br.com.about.service
+package br.com.about.data.service
 
-import br.com.about.model.AboutUsResponse
-import br.com.about.model.Member
+import br.com.about.data.model.AboutUsResponse
+import br.com.about.data.model.Member
 import retrofit2.Response
 
 interface AboutService {

@@ -8,7 +8,7 @@
 
     <TextView
         android:id="@+id/title"
-        style="@style/TextStyle.BodySmall"
+        style="@style/TextStyle.BiggerBody"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/margin"
@@ -24,7 +24,7 @@
         style="@style/TextStyle.BiggerBody.Semibold"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin"
+        android:layout_marginStart="@dimen/margin_small"
         android:textColor="@color/colorBlack"
         app:layout_constraintBottom_toBottomOf="@+id/title"
         app:layout_constraintStart_toEndOf="@+id/title"
@@ -34,9 +34,9 @@
     <com.google.android.material.slider.Slider
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:stepSize="10.0"
+        android:stepSize="1.0"
         android:valueFrom="0.0"
-        android:valueTo="100.0"
+        android:valueTo="10.0"
         android:layout_margin="@dimen/margin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
