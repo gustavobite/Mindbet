@@ -30,8 +30,7 @@ class LoginViewModel(
             login(it).collect{ logging ->
                 _loginResponse.postValue(logging)
             }
-        } ?: kotlin.run {
-             _loginResponse.postValue(Resource.error(InvalidParameterException())) }
+        } ?: kotlin.run {  Resource.error<User>(InvalidParameterException()) }
     }
 
     suspend fun saveLogin() = user.value?.let {  setLocalUserData(it) }

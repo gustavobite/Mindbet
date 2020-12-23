@@ -16,7 +16,7 @@
 
     <fragment
         android:id="@+id/newsDetails"
-        android:name="br.com.news.details.NewsDetailsFragment"
+        android:name="br.com.news.presentation.details.NewsDetailsFragment"
         android:label="NewsDetailsFragment"/>
 
     <fragment

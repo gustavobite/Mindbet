@@ -2,14 +2,19 @@ package br.com.about
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import br.com.about.interactor.GetAbout
-import br.com.about.interactor.GetMembers
+import br.com.about.domain.GetAbout
+import br.com.about.domain.GetMembers
 import br.com.about.model.AboutUsResponse
 import br.com.about.model.Member
 import br.com.mindbet.common.base.Resource
 import br.com.mindbet.common.extension.combineWith
 import br.com.mindbet.common.extension.toSingleEvent
+import kotlinx.coroutines.FlowPreview
+import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.flow.flatMapMerge
+import kotlinx.coroutines.flow.map
 
+@FlowPreview
 class AboutViewModel(
     private val getAbout: GetAbout,
     private val getMembers: GetMembers
@@ -28,17 +33,16 @@ class AboutViewModel(
 
     suspend fun callServices(){
         getAboutUs()
-        getMembers()
     }
 
     private suspend fun getAboutUs(){
         _getAboutResponse.postValue(Resource.loading())
-        _getAboutResponse.postValue(getAbout(Unit))
+        getAbout(Unit).flatMapMerge {
+            _getAboutResponse.postValue(it)
+            _getMembersResponse.postValue(Resource.loading())
+            getMembers(Unit)
+        }.collect {
+            _getMembersResponse.postValue(it)
+        }
     }
-
-    private suspend fun getMembers(){
-        _getMembersResponse.postValue(Resource.loading())
-        _getMembersResponse.postValue(getMembers(Unit))
-    }
-
 }
