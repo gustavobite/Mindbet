@@ -1,4 +1,4 @@
-package br.com.mindset.login.service
+package br.com.mindset.login.data.service
 
 import br.com.mindbet.common.user.User
 import retrofit2.Response

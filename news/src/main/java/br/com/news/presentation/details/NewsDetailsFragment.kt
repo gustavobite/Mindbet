@@ -1,24 +1,20 @@
-package br.com.news.details
+package br.com.news.presentation.details
 
 import android.content.Intent
-import android.graphics.PorterDuff
 import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat
-import androidx.core.view.ViewCompat
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.transition.TransitionInflater
 import br.com.mindbet.common.base.BaseActivity
 import br.com.mindbet.common.base.BaseFragment
-import br.com.news.NewsViewModel
+import br.com.news.presentation.NewsViewModel
 import br.com.news.R
 import br.com.news.databinding.FragmentNewsDetailsBinding
 import com.google.android.material.appbar.AppBarLayout
-import com.google.android.material.appbar.AppBarLayout.OnOffsetChangedListener
 import kotlinx.android.synthetic.main.fragment_news_details.*
 import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 

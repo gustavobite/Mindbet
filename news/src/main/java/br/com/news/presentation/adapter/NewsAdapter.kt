@@ -1,4 +1,4 @@
-package br.com.news.adapter
+package br.com.news.presentation.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,13 +8,13 @@ import androidx.recyclerview.widget.RecyclerView
 import br.com.mindbet.common.component.recycler_view.BaseRecyclerViewAdapter
 import br.com.mindbet.common.extension.showImage
 import br.com.news.R
-import br.com.news.model.News
+import br.com.news.data.model.News
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.google.android.material.imageview.ShapeableImageView
 
 
-class NewsAdapter(val listener: ((News,ShapeableImageView, TextView) -> Unit)? = null) :
+class NewsAdapter(val listener: ((News, ShapeableImageView, TextView) -> Unit)? = null) :
     RecyclerView.Adapter<NewsAdapter.NewsHolder>() {
 
 
@@ -26,7 +26,10 @@ class NewsAdapter(val listener: ((News,ShapeableImageView, TextView) -> Unit)? =
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_news, parent, false)
-        return NewsHolder(view,listener)
+        return NewsHolder(
+            view,
+            listener
+        )
     }
 
     override fun getItemCount() = items.count()
@@ -37,7 +40,7 @@ class NewsAdapter(val listener: ((News,ShapeableImageView, TextView) -> Unit)? =
     }
 
 
-    class NewsHolder(itemView: View, val listener: ((News,ShapeableImageView,TextView) -> Unit)? = null) :
+    class NewsHolder(itemView: View, val listener: ((News, ShapeableImageView, TextView) -> Unit)? = null) :
         RecyclerView.ViewHolder(itemView) {
 
         private val newsImage = itemView.findViewById<ShapeableImageView>(R.id.newsImage)

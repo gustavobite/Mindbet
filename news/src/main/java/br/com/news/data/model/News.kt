@@ -1,4 +1,4 @@
-package br.com.news.model
+package br.com.news.data.model
 
 import br.com.mindbet.common.extension.createUUID
 import com.google.gson.annotations.SerializedName

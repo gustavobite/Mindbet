@@ -1,17 +1,15 @@
-package br.com.news
+package br.com.news.presentation
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import br.com.mindbet.common.base.Resource
 import br.com.mindbet.common.extension.toSingleEvent
-import br.com.mindbet.common.helper.SingleLiveEvent
 import br.com.mindbet.navigation.NavigationViewModel
-import br.com.news.interactor.GetNews
-import br.com.news.model.News
-import com.google.android.material.navigation.NavigationView
+import br.com.news.domain.GetNewsUseCase
+import br.com.news.data.model.News
+import kotlinx.coroutines.flow.collect
 
-class NewsViewModel(private val getNews: GetNews) : NavigationViewModel() {
+class NewsViewModel(private val getNewsUseCase: GetNewsUseCase) : NavigationViewModel() {
 
     private val _getNewsResponse =
         MutableLiveData<Resource<List<News>>>()
@@ -23,7 +21,9 @@ class NewsViewModel(private val getNews: GetNews) : NavigationViewModel() {
 
     suspend fun news(){
         _getNewsResponse.postValue(Resource.loading())
-        _getNewsResponse.postValue(getNews(Unit))
+        getNewsUseCase(Unit).collect {
+            _getNewsResponse.postValue(it)
+        }
     }
 
 

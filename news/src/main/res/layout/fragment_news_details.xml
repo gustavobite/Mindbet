@@ -6,7 +6,7 @@
         <import type="android.view.View"/>
         <variable
             name="item"
-            type="br.com.news.model.News" />
+            type="br.com.news.data.model.News" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

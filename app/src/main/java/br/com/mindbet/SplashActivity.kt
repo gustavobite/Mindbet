@@ -4,11 +4,12 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import br.com.mindbet.common.base.BaseActivity
-import br.com.mindbet.core.CoreActivity
-import br.com.mindset.login.LoginActivity
+import br.com.mindset.login.presentation.LoginActivity
+import kotlinx.coroutines.InternalCoroutinesApi
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
+@InternalCoroutinesApi
 class SplashActivity : BaseActivity(){
 
     companion object{

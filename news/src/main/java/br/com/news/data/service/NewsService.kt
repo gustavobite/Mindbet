@@ -1,7 +1,7 @@
-package br.com.news
+package br.com.news.data.service
 
-import br.com.news.model.News
-import br.com.news.model.NewsResponse
+import br.com.news.data.model.News
+import br.com.news.data.model.NewsResponse
 import retrofit2.http.GET
 
 interface NewsService {

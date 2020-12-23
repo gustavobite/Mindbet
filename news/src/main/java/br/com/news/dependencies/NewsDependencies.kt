@@ -1,8 +1,13 @@
 package br.com.news.dependencies
 
 import br.com.mindbet.common.extension.koin.resolveRetrofit
-import br.com.news.NewsService
-import br.com.news.NewsServiceMock
+import br.com.news.data.service.NewsService
+import br.com.news.data.service.NewsServiceMock
+import br.com.news.data.repository.NewsRepository
+import br.com.news.data.repository.NewsRepositoryImpl
+import br.com.news.domain.GetNewsUseCase
+import br.com.news.domain.GetNewsUseCaseImpl
+import br.com.news.presentation.NewsViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
@@ -13,12 +18,13 @@ class NewsDependencies {
 //
             //News
             factory<NewsService> { resolveRetrofit() ?: NewsServiceMock() }
-            single<br.com.news.interactor.GetNews> {
-                br.com.news.interactor.GetNewsImpl(
-                    service = get()
+            factory<NewsRepository> { NewsRepositoryImpl(get()) }
+            single<GetNewsUseCase> {
+                GetNewsUseCaseImpl(
+                    repository = get()
                 )
             }
-            viewModel { br.com.news.NewsViewModel(get()) }
+            viewModel { NewsViewModel(get()) }
         }
     }
 

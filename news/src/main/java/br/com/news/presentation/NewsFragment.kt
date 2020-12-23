@@ -1,6 +1,5 @@
-package br.com.news
+package br.com.news.presentation
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -16,8 +15,9 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import br.com.mindbet.common.base.Resource
 import br.com.mindbet.navigation.NavigationFragment
 import br.com.mindbet.navigation.NavigationViewModel
-import br.com.news.adapter.NewsAdapter
-import br.com.news.model.News
+import br.com.news.R
+import br.com.news.presentation.adapter.NewsAdapter
+import br.com.news.data.model.News
 import com.google.android.material.imageview.ShapeableImageView
 import kotlinx.android.synthetic.main.fragment_news.*
 import kotlinx.coroutines.launch
@@ -29,7 +29,8 @@ class NewsFragment: NavigationFragment(), SwipeRefreshLayout.OnRefreshListener {
     override fun getScreenName(): String = "news fragment"
     override fun layoutResource(): Int = R.layout.fragment_news
 
-    private val adapter = NewsAdapter(this::onItemClick)
+    private val adapter =
+        NewsAdapter(this::onItemClick)
     private val viewModel : NewsViewModel by sharedViewModel()
     private var imageView: ShapeableImageView? = null
     private var titleView:TextView? = null

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/news"
-        android:name="br.com.news.NewsFragment"
+        android:name="br.com.news.presentation.NewsFragment"
         android:label="NewsFragment">
 
         <action android:id="@+id/action_news_to_details"
