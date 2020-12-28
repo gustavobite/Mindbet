@@ -3,7 +3,7 @@
     <data>
         <variable
             name="viewModel"
-            type="br.com.mindset.login.LoginViewModel" />
+            type="br.com.mindset.login.presentation.LoginViewModel" />
     </data>
 
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"

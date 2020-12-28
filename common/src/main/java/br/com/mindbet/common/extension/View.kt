@@ -62,6 +62,13 @@ fun View.show() {
     this.visibility = View.VISIBLE
 }
 
+fun View.showOrHide(callback: ((Int) -> Unit)? = null) {
+    if(this.isShown) this.hide()
+    else this.show()
+
+    callback?.invoke(this.visibility)
+}
+
 fun View.showDelayed(){
     TransitionManager.beginDelayedTransition(this.rootView as ViewGroup)
     show()

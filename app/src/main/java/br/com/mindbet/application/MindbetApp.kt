@@ -8,13 +8,14 @@ import br.com.mindbet.common.dependency.NetworkModule
 import br.com.mindbet.common.dependency.SteganographyModule
 import br.com.mindbet.core.dependencies.CoreDependencies
 import br.com.news.dependencies.NewsDependencies
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
 import org.koin.core.logger.Level
 
+@ExperimentalCoroutinesApi
 class MindbetApp : Application() {
-
 
     companion object {
         lateinit var instance: MindbetApp

@@ -1,5 +1,10 @@
 package br.com.mindbet.common.base
 
+import androidx.lifecycle.MutableLiveData
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.catch
+import kotlinx.coroutines.flow.flow
+
 class Resource<T> private constructor(val status: Status, val data: T? = null, val exception: Throwable? = null) {
 
     enum class Status {
@@ -32,3 +37,5 @@ class Resource<T> private constructor(val status: Status, val data: T? = null, v
     }
 
 }
+
+fun <T> Exception.toResourceFlow():Flow<Resource<T>> = flow { emit(Resource.error<T>(this@toResourceFlow))  }

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/news"
-        android:name="br.com.news.NewsFragment"
+        android:name="br.com.news.presentation.NewsFragment"
         android:label="NewsFragment">
 
         <action android:id="@+id/action_news_to_details"
@@ -16,16 +16,16 @@
 
     <fragment
         android:id="@+id/newsDetails"
-        android:name="br.com.news.details.NewsDetailsFragment"
+        android:name="br.com.news.presentation.details.NewsDetailsFragment"
         android:label="NewsDetailsFragment"/>
 
     <fragment
         android:id="@+id/simulate"
-        android:name="br.com.mindbet.core.simulation.SimulationFragment"
+        android:name="br.com.mindbet.core.simulation.create.presentation.SimulationFragment"
         android:label="SimulateFragment"/>
 
     <fragment
         android:id="@+id/about"
-        android:name="br.com.about.AboutFragment"
+        android:name="br.com.about.presentation.AboutFragment"
         android:label="SimulateFragment"/>
 </navigation>
