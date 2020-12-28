@@ -21,7 +21,7 @@
 
     <fragment
         android:id="@+id/simulate"
-        android:name="br.com.mindbet.core.simulation.SimulationFragment"
+        android:name="br.com.mindbet.core.simulation.create.presentation.SimulationFragment"
         android:label="SimulateFragment"/>
 
     <fragment
